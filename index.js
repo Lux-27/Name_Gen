@@ -2,13 +2,13 @@ var superheroes = require("superheroes");
 var supervillains = require("supervillains");
 
 document.getElementById("Hero").addEventListener("click", function () {
-  userInput = "Hero";
+  // userInput = "Hero";
   var hero = superheroes.random();
   alert("Your hero name is : " + hero);
 });
 
 document.getElementById("Villain").addEventListener("click", function () {
-  userInput = "Villain";
+  // userInput = "Villain";
   var villains = supervillains.random();
   alert("Your villain name is : " + villains);
 });
