@@ -1,20 +1,31 @@
 (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
-document.addEventListener("click", function (event) {
-  userInput = this.innerHTML;
-});
-
 var superheroes = require("superheroes");
 var supervillains = require("supervillains");
 
-if (userInput === "Hero") {
+document.getElementById("Hero").addEventListener("click", function () {
+  userInput = "Hero";
+  // console.log("hiii");
   var hero = superheroes.random();
   alert("Your hero name is : " + hero);
-} else if (userInput === "Villain") {
+});
+
+document.getElementById("Villain").addEventListener("click", function () {
+  userInput = "Villain";
+  // console.log("hiii");
   var villains = supervillains.random();
   alert("Your villain name is : " + villains);
-}
+});
 
-module.exports = converter;
+// function generateName(userInput) {
+//   if (userInput === "Hero") {
+//     var hero = superheroes.random();
+//     alert("Your hero name is : " + hero);
+//   } else if (userInput === "Villain") {
+//     var villains = supervillains.random();
+//     alert("Your villain name is : " + villains);
+//   }
+// }
+
 // Name Generation Logic
 
 // const readline = require("readline");
