@@ -1,0 +1,51 @@
+{
+	"name": "supervillains",
+	"version": "3.0.0",
+	"description": "Get supervillain names",
+	"license": "MIT",
+	"repository": "sindresorhus/supervillains",
+	"author": {
+		"name": "Sindre Sorhus",
+		"email": "sindresorhus@gmail.com",
+		"url": "sindresorhus.com"
+	},
+	"engines": {
+		"node": ">=8"
+	},
+	"scripts": {
+		"test": "xo && ava && tsd"
+	},
+	"files": [
+		"index.js",
+		"index.d.ts",
+		"supervillains.json"
+	],
+	"keywords": [
+		"word",
+		"words",
+		"list",
+		"array",
+		"random",
+		"rand",
+		"supervillains",
+		"supervillain",
+		"villains",
+		"villain",
+		"marvel",
+		"dc",
+		"comics"
+	],
+	"dependencies": {
+		"unique-random-array": "^2.0.0"
+	},
+	"devDependencies": {
+		"ava": "^1.4.1",
+		"tsd": "^0.7.2",
+		"xo": "^0.24.0"
+	},
+	"tsd": {
+		"compilerOptions": {
+			"resolveJsonModule": true
+		}
+	}
+}
